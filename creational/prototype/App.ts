@@ -20,5 +20,3 @@ export default class Prototype{
         console.log(rectangle2)
     }
 }
-
-new Prototype();
