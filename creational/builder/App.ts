@@ -23,13 +23,13 @@ export default class Builder{
         this.director.makeSandwich(clubSandwichBuilder);
         this.director.makeLoadedSandwich(pbjSandwichBuilder);
 
-        let bltSandwich = bltSandwichBuilder.getSandwich()
-        let clubSandwich = clubSandwichBuilder.getSandwich()
-        let pbjSandwich = pbjSandwichBuilder.getSandwich()
+        let bltSandwich = bltSandwichBuilder.getSandwich();
+        let clubSandwich = clubSandwichBuilder.getSandwich();
+        let pbjSandwich = pbjSandwichBuilder.getSandwich();
 
-        console.log(bltSandwich)
-        console.log(clubSandwich)
-        console.log(pbjSandwich)
+        console.log(bltSandwich);
+        console.log(clubSandwich);
+        console.log(pbjSandwich);
         
     }
 }
