@@ -1,0 +1,22 @@
+{
+  "name": "designpatterns",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicola-bovolato/object-design-patterns.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicola-bovolato/object-design-patterns/issues"
+  },
+  "homepage": "https://github.com/nicola-bovolato/object-design-patterns#readme"
+}
