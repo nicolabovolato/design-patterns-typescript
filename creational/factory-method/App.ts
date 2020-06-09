@@ -1,18 +1,18 @@
-import { CarFactory, MotorcycleFactory } from "./Factories"
+import { CarFactory, MotorcycleFactory } from "./Factories";
 
-export class App{
+export default class FactoryMethod{
 
     constructor(){
-        App.run()
+        this.run();
     }
 
-    private static run(): void {
+    private run(): void {
 
-        let car = new CarFactory()
-        let motorcycle =  new MotorcycleFactory()
+        let car = new CarFactory();
+        let motorcycle =  new MotorcycleFactory();
 
-        car.start()
-        motorcycle.start()
+        car.start();
+        motorcycle.start();
     }
 
 }

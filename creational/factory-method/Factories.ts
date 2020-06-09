@@ -1,4 +1,4 @@
-import { Vehicle, Car, Motorcycle } from "./Vehicles"
+import { Vehicle, Car, Motorcycle } from "./Vehicles";
 
 export abstract class VehicleFactory {
 
