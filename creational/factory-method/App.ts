@@ -16,8 +16,3 @@ export class App{
     }
 
 }
-
-
-
-
-
