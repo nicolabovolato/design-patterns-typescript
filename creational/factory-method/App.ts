@@ -3,10 +3,10 @@ import { CarFactory, MotorcycleFactory } from "./Factories";
 export default class FactoryMethod{
 
     constructor(){
-        this.run();
+        this.init();
     }
 
-    private run(): void {
+    private init(): void {
 
         let car = new CarFactory();
         let motorcycle =  new MotorcycleFactory();
