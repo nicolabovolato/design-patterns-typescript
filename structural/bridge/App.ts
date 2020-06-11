@@ -2,7 +2,7 @@ import { SmallGarden, BigGarden } from "./Gardens";
 import { House, BigHouse } from "./Houses";
 
 
-class Bridge{
+export default class Bridge{
 
     constructor(){
 
