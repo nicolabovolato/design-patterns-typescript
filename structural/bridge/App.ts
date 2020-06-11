@@ -22,5 +22,3 @@ class Bridge{
 
     }
 }
-
-new Bridge();
