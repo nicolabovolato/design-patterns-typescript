@@ -2,7 +2,7 @@ import { Person } from "./Person";
 
 abstract class BaseDecorator implements Person {
 
-    person: Person;
+    protected person: Person;
 
     constructor(_person: Person) {
 
