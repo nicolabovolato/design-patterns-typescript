@@ -2,7 +2,7 @@ import { Garden } from "./Gardens";
 
 export class House {
 
-    private garden: Garden;
+    protected garden: Garden;
 
     constructor(_garden: Garden){
 
