@@ -34,7 +34,7 @@ export class Division implements ArmyRank {
     }
 
     remove(child: ArmyRank): void {
-        this.children.filter(_child => child === _child);
+        this.children = this.children.filter(_child => child === _child);
     }
 
     executeOrder(): void {
