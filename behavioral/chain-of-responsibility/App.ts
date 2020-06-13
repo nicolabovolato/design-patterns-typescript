@@ -31,5 +31,3 @@ export default class Chain{
         this.salesDept.handle(500000);
     }
 }
-
-new Chain();
