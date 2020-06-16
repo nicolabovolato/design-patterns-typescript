@@ -17,5 +17,3 @@ export default class InterpreterExample {
         console.log(this.parser.parse("1 2 3 - +"));
     }
 }
-
-new InterpreterExample()
