@@ -1,13 +1,10 @@
 {
-  "name": "designpatterns",
-  "version": "1.0.0",
-  "description": "",
   "dependencies": {
     "typescript": "^3.9.5"
   },
-  "devDependencies": {},
   "scripts": {
-    "tsc": "tsc"
+    "build": "tsc",
+    "start": "node ./build/index.js"
   },
   "repository": {
     "type": "git",
