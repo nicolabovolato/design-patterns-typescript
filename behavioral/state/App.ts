@@ -26,5 +26,3 @@ export default class StateEx {
         this.car.turnKeys();
     }
 }
-
-new StateEx();
