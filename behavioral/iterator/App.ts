@@ -1,28 +1,29 @@
-import { UserCollection, User } from "./Users";
-import { MailService } from "./MailService";
+import { UserCollection, User } from "./Users"
+import { MailService } from "./MailService"
 
-export default class IteratorEx {
+export default class IteratorExample {
 
-    subscribedUsers: UserCollection;
+    subscribedUsers: UserCollection
+
     constructor(){
 
-        this.subscribedUsers = this.configure();
-        this.run();
+        this.subscribedUsers = this.configure()
+        this.run()
     }
 
     configure(): UserCollection {
 
-        let collection = new UserCollection();
+        let collection = new UserCollection()
 
-        collection.add(new User("John Doe", "john@doe.com"));
-        collection.add(new User("John Doe Jr.", "john1@doe.com"));
-        collection.add(new User("John Doe Sr.", "john2@doe.com"));
+        collection.add(new User("John Doe", "john@doe.com"))
+        collection.add(new User("John Doe Jr.", "john1@doe.com"))
+        collection.add(new User("John Doe Sr.", "john2@doe.com"))
 
-        return collection;
+        return collection
     }
 
     run(): void {
 
-        MailService.sendMail(this.subscribedUsers.getIterator(), "spam");
+        MailService.sendMail(this.subscribedUsers.getIterator(), "spam")
     }
 }

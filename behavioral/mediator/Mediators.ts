@@ -1,13 +1,13 @@
-import { Plane } from "./Planes";
+import { Plane } from "./Planes"
 
 export interface Mediator {
 
-    notify(sender: object, event: string): void;
+    notify(sender: object, event: string): void
 }
 
 export class AirTrafficControlMediator implements Mediator {
     
-    isRunwayFree: boolean = true; 
+    isRunwayFree: boolean = true 
 
     notify(sender: Plane, event: string): void {
 
@@ -17,25 +17,25 @@ export class AirTrafficControlMediator implements Mediator {
 
                 if(this.isRunwayFree) {
 
-                    this.isRunwayFree = false;
-                    sender.confirmTakeOff();
-                    this.isRunwayFree = true;
+                    this.isRunwayFree = false
+                    sender.confirmTakeOff()
+                    this.isRunwayFree = true
                 }
-                else console.log(`${sender.name} could not take off, runway is occupied`);
+                else console.log(`${sender.name} could not take off, runway is occupied`)
 
-                break;
+                break
                 
             case "land":
 
                 if(this.isRunwayFree) {
 
-                    this.isRunwayFree = false;
-                    sender.confirmLand();
-                    this.isRunwayFree = true;
+                    this.isRunwayFree = false
+                    sender.confirmLand()
+                    this.isRunwayFree = true
                 }
-                else console.log(`${sender.name} could not land, runway is occupied`);
+                else console.log(`${sender.name} could not land, runway is occupied`)
 
-                break;
+                break
         }
     }
 

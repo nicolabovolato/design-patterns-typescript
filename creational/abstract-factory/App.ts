@@ -1,44 +1,45 @@
-import { RigFactory, SmallRigFactory, StandardRigFactory} from "./Factories";
-import { Case } from "./Cases";
-import { Monitor } from "./Monitors";
+import { RigFactory, SmallRigFactory, StandardRigFactory} from "./Factories"
+import { Case } from "./Cases"
+import { Monitor } from "./Monitors"
 
-export default class AbstractFactory{
+export default class AbstractFactoryExample {
 
-    factory: RigFactory;
+    factory: RigFactory
 
-    case: Case;
-    monitor: Monitor;
+    case: Case
+    monitor: Monitor
 
     constructor(){
 
-        this.factory = this.configure("small");
-        this.case = this.factory.createCase();
-        this.monitor = this.factory.createMonitor();
+        this.factory = this.configure("small")
+        this.case = this.factory.createCase()
+        this.monitor = this.factory.createMonitor()
 
-        this.run();
+        this.run()
 
-        this.factory = this.configure("standard");
-        this.case = this.factory.createCase();
-        this.monitor = this.factory.createMonitor();
+        this.factory = this.configure("standard")
+        this.case = this.factory.createCase()
+        this.monitor = this.factory.createMonitor()
 
-        this.run();
+        this.run()
     }
 
-    private configure(size: string): RigFactory{
+    private configure(size: string): RigFactory {
         
         switch(size){
 
             case "small":
-                return new SmallRigFactory();
+                return new SmallRigFactory()
 
             case "standard":
             default:
-                return new StandardRigFactory();
+                return new StandardRigFactory()
         }
     }
 
-    private run(){
-        this.case.info();
-        this.monitor.info();
+    private run() {
+
+        this.case.info()
+        this.monitor.info()
     }
 }

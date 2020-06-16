@@ -1,18 +1,18 @@
 export interface Garden {
 
-    mowLawn(): void;
+    mowLawn(): void
 }
 
 export class SmallGarden implements Garden {
 
     mowLawn(): void {
-        console.log("Takes little time");
+        console.log("Takes little time")
     }
 }
 
 export class BigGarden implements Garden {
 
     mowLawn(): void {
-        console.log("Takes some time");
+        console.log("Takes some time")
     }
 }

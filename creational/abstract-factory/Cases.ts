@@ -1,40 +1,40 @@
 export interface Case {
 
-    width: number;
-    length: number;
-    height: number;
+    width: number
+    length: number
+    height: number
 
-    volume(): number;
-    info(): void;
+    volume(): number
+    info(): void
 }
 
-export class StandardCase implements Case{
+export class StandardCase implements Case {
 
-    width: number = 20;
-    height: number = 60;
-    length: number = 40;
+    width: number = 20
+    height: number = 60
+    length: number = 40
 
     volume(): number {
-        return this.width * this.length * this.height;
+        return this.width * this.length * this.height
     }
 
     info(): void{
-        console.log("Standard Case");
+        console.log("Standard Case")
     }
 
 }
 
-export class SmallCase implements Case{
+export class SmallCase implements Case {
 
-    width: number = 15;
-    height: number = 40;
-    length: number = 20;
+    width: number = 15
+    height: number = 40
+    length: number = 20
 
     volume(): number {
-        return this.width * this.length * this.height;
+        return this.width * this.length * this.height
     }
 
     info(): void{
-        console.log("Small Case");
+        console.log("Small Case")
     }    
-};
+}

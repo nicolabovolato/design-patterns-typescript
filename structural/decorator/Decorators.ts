@@ -1,17 +1,15 @@
-import { Person } from "./Person";
+import { Person } from "./Person"
 
 abstract class BaseDecorator implements Person {
 
-    protected person: Person;
+    protected person: Person
 
     constructor(_person: Person) {
-
-        this.person = _person;
+        this.person = _person
     }
 
     getClothingInfo(): void {
-
-        this.person.getClothingInfo();
+        this.person.getClothingInfo()
     }
 
 }
@@ -19,13 +17,12 @@ abstract class BaseDecorator implements Person {
 export class JacketDecorator extends BaseDecorator {
 
     constructor(_person: Person){
-
-        super(_person);
+        super(_person)
     }
 
     getClothingInfo(): void {
         super.getClothingInfo()
-        console.log("and a jacket");
+        console.log("and a jacket")
     }
 
 }
@@ -34,17 +31,16 @@ export class UmbrellaDecorator extends BaseDecorator {
 
     constructor(_person: Person){
 
-        super(_person);
-        this.openUmbrella();
+        super(_person)
+        this.openUmbrella()
     }
 
     getClothingInfo(): void {
         super.getClothingInfo()
-        console.log("i'm also carrying an umbrella");
+        console.log("i'm also carrying an umbrella")
     }
 
     openUmbrella(): void {
-        
         console.log("Opened umbrella")
     }
 

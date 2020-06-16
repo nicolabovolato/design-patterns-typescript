@@ -1,4 +1,4 @@
-import { UserIterator } from "./Iterators";
+import { UserIterator } from "./Iterators"
 
 export class MailService {
 
@@ -6,7 +6,7 @@ export class MailService {
 
         while(iterator.hasMore()){
 
-            let user = iterator.getNext();
+            let user = iterator.getNext()
             console.log(`Email sent to ${user.email} with text '${text}'`)
         }
     }

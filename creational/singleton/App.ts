@@ -1,10 +1,10 @@
-import { Singleton } from "./Singletons";
+import { Singleton } from "./Singletons"
 
-export default class SingletonApp{
+export default class SingletonExample {
 
     constructor(){
 
-        this.run();
+        this.run()
     }
 
     private run(){
@@ -12,7 +12,7 @@ export default class SingletonApp{
         let s1 = Singleton.getInstance()
         let s2 = Singleton.getInstance()
 
-        s1.value = 10;
+        s1.value = 10
 
         console.log(s1)
         console.log(s2)

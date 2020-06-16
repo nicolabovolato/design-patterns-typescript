@@ -1,24 +1,23 @@
-import { SmallGarden, BigGarden } from "./Gardens";
-import { House, BigHouse } from "./Houses";
+import { SmallGarden, BigGarden } from "./Gardens"
+import { House, BigHouse } from "./Houses"
 
 
-export default class Bridge{
+export default class BridgeExample {
 
     constructor(){
-
-        this.run();
+        this.run()
     }
 
     run(): void {
 
-        let smallGarden = new SmallGarden();
-        let bigGarden = new BigGarden();
+        let smallGarden = new SmallGarden()
+        let bigGarden = new BigGarden()
 
-        let houseWithBigGarden = new House(bigGarden);
-        let bigHouseWithSmallGarden = new BigHouse(smallGarden);
+        let houseWithBigGarden = new House(bigGarden)
+        let bigHouseWithSmallGarden = new BigHouse(smallGarden)
 
-        houseWithBigGarden.mowLawn();
-        bigHouseWithSmallGarden.mowLawn();
+        houseWithBigGarden.mowLawn()
+        bigHouseWithSmallGarden.mowLawn()
 
     }
 }

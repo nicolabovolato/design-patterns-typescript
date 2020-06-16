@@ -1,30 +1,30 @@
-import { Monitor, StandardMonitor, SmallMonitor } from "./Monitors";
-import { Case, StandardCase, SmallCase } from "./Cases";
+import { Monitor, StandardMonitor, SmallMonitor } from "./Monitors"
+import { Case, StandardCase, SmallCase } from "./Cases"
 
 export abstract class RigFactory {
 
-    abstract createMonitor() : Monitor;
-    abstract createCase() : Case;
+    abstract createMonitor() : Monitor
+    abstract createCase() : Case
 }
 
 export class StandardRigFactory extends RigFactory {
 
     createMonitor(): Monitor {
-        return new StandardMonitor();
+        return new StandardMonitor()
     }
 
     createCase(): Case {
-        return new StandardCase();
+        return new StandardCase()
     }
 }
 
 export class SmallRigFactory extends RigFactory {
 
     createMonitor(): Monitor {
-        return new SmallMonitor();
+        return new SmallMonitor()
     }
 
     createCase(): Case {
-        return new SmallCase();
+        return new SmallCase()
     }
 }

@@ -1,35 +1,35 @@
-import { Director } from "./Director";
-import { BLTSandwichBuilder, ClubSandwichBuilder, PBJSandwichBuilder } from "./Builders";
+import { Director } from "./Director"
+import { BLTSandwichBuilder, ClubSandwichBuilder, PBJSandwichBuilder } from "./Builders"
 
 
-export default class Builder{
+export default class BuilderExample {
 
-    director: Director;
+    director: Director
 
-    constructor(){
+    constructor() {
 
-        this.director = new Director();
+        this.director = new Director()
 
-        this.run();
+        this.run()
     }
 
-    private run(){
+    private run() {
 
-        let bltSandwichBuilder = new BLTSandwichBuilder();
-        let clubSandwichBuilder = new ClubSandwichBuilder();
-        let pbjSandwichBuilder = new PBJSandwichBuilder();
+        let bltSandwichBuilder = new BLTSandwichBuilder()
+        let clubSandwichBuilder = new ClubSandwichBuilder()
+        let pbjSandwichBuilder = new PBJSandwichBuilder()
 
-        this.director.makeSandwich(bltSandwichBuilder);
-        this.director.makeSandwich(clubSandwichBuilder);
-        this.director.makeLoadedSandwich(pbjSandwichBuilder);
+        this.director.makeSandwich(bltSandwichBuilder)
+        this.director.makeSandwich(clubSandwichBuilder)
+        this.director.makeLoadedSandwich(pbjSandwichBuilder)
 
-        let bltSandwich = bltSandwichBuilder.getSandwich();
-        let clubSandwich = clubSandwichBuilder.getSandwich();
-        let pbjSandwich = pbjSandwichBuilder.getSandwich();
+        let bltSandwich = bltSandwichBuilder.getSandwich()
+        let clubSandwich = clubSandwichBuilder.getSandwich()
+        let pbjSandwich = pbjSandwichBuilder.getSandwich()
 
-        console.log(bltSandwich);
-        console.log(clubSandwich);
-        console.log(pbjSandwich);
+        console.log(bltSandwich)
+        console.log(clubSandwich)
+        console.log(pbjSandwich)
         
     }
 }

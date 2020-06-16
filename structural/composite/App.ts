@@ -1,36 +1,35 @@
-import { ArmyRank, Division, Soldier } from "./Army";
+import { ArmyRank, Division, Soldier } from "./Army"
 
-export default class Composite{
+export default class CompositeExample {
 
-    army: ArmyRank;
+    army: ArmyRank
 
-    constructor(){
+    constructor() {
 
-        this.army = this.configure();
-        this.run();
+        this.army = this.configure()
+        this.run()
     }
 
     configure(): ArmyRank {
 
-        let army = new Division("Army");
+        let army = new Division("Army")
 
-        army.add(new Soldier("General", "Patton"));
+        army.add(new Soldier("General", "Patton"))
         
-        army.add(new Division("Paratroopers"));
-        army.add(new Soldier("Private", "Brown"));
-        army.add(new Soldier("Sergeant", "Davis"));
-        army.add(new Soldier("Private", "Miller"));
+        army.add(new Division("Paratroopers"))
+        army.add(new Soldier("Private", "Brown"))
+        army.add(new Soldier("Sergeant", "Davis"))
+        army.add(new Soldier("Private", "Miller"))
 
-        army.add(new Division("Infantry"));
-        army.add(new Soldier("Private", "Jones"));
-        army.add(new Soldier("Sergeant", "Smith"));
-        army.add(new Soldier("Private", "Williams"));
+        army.add(new Division("Infantry"))
+        army.add(new Soldier("Private", "Jones"))
+        army.add(new Soldier("Sergeant", "Smith"))
+        army.add(new Soldier("Private", "Williams"))
 
-        return army;
+        return army
     }
 
     run(): void {
-
-        this.army.executeOrder();
+        this.army.executeOrder()
     }
 }

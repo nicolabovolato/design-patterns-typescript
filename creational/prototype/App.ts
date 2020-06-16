@@ -1,20 +1,20 @@
-import { Rectangle } from "./Prototypes";
+import { Rectangle } from "./Prototypes"
 
-export default class Prototype{
+export default class PrototypeExample {
 
     constructor(){
 
-        this.run();
+        this.run()
     }
 
     private run(){
         
-        let rectangle1 = new Rectangle();
+        let rectangle1 = new Rectangle()
 
-        rectangle1.heigth = 10;
-        rectangle1.width = 20;
+        rectangle1.heigth = 10
+        rectangle1.width = 20
 
-        let rectangle2 = rectangle1.clone();
+        let rectangle2 = rectangle1.clone()
 
         console.log(rectangle1)
         console.log(rectangle2)

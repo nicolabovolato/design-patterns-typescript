@@ -1,6 +1,6 @@
-import { SandwichBuilder } from "./Builders";
+import { SandwichBuilder } from "./Builders"
 
-export class Director{
+export class Director {
 
     makeSandwich(builder: SandwichBuilder): void {
 

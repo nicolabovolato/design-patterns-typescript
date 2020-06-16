@@ -1,20 +1,20 @@
-import { ShapeVisitor } from "./Visitors";
+import { ShapeVisitor } from "./Visitors"
 
 export interface Shape {
 
-    accept(visitor: ShapeVisitor): void;
+    accept(visitor: ShapeVisitor): void
 }
 
 export class Circle implements Shape {
     
-    radius: number;
+    radius: number
 
     constructor(_radius: number) {
-        this.radius= _radius;
+        this.radius= _radius
     }
 
     accept(visitor: ShapeVisitor): void {
-        visitor.visitCircle(this);
+        visitor.visitCircle(this)
     }
 }
 
@@ -24,11 +24,12 @@ export class Rectangle implements Shape {
     length: number
 
     constructor(_height: number, _length: number) {
-        this.height= _height;
-        this.length= _length;
+
+        this.height= _height
+        this.length= _length
     }
 
     accept(visitor: ShapeVisitor): void {
-        visitor.visitRectangle(this);
+        visitor.visitRectangle(this)
     }
 }

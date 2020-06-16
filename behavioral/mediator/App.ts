@@ -1,24 +1,24 @@
-import { Mediator, AirTrafficControlMediator } from "./Mediators";
-import { Boeing737, FokkerF100, AirbusA300 } from "./Planes";
+import { Mediator, AirTrafficControlMediator } from "./Mediators"
+import { Boeing737, FokkerF100, AirbusA300 } from "./Planes"
 
-export default class MediatorEx {
+export default class MediatorExample {
 
-    atc: Mediator;
+    atc: Mediator
 
     constructor(){
 
-        this.atc = new AirTrafficControlMediator();
-        this.run();
+        this.atc = new AirTrafficControlMediator()
+        this.run()
     }
 
     run(): void {
 
-        let plane1 = new Boeing737(this.atc);
-        let plane2 = new FokkerF100(this.atc);
-        let plane3 = new AirbusA300(this.atc);
+        let plane1 = new Boeing737(this.atc)
+        let plane2 = new FokkerF100(this.atc)
+        let plane3 = new AirbusA300(this.atc)
 
-        plane1.signalTakeOff();
-        plane2.signalLand();
-        plane3.signalLand();
+        plane1.signalTakeOff()
+        plane2.signalLand()
+        plane3.signalLand()
     }
 }

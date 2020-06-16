@@ -1,38 +1,40 @@
 export abstract class LoggerTemplate {
 
-    loglevel: string;
+    loglevel: string
 
     constructor(_loglevel: string) {
-        this.loglevel = _loglevel;
+        this.loglevel = _loglevel
     }
 
-    abstract log(message: string): void;
+    abstract log(message: string): void
 }
 
 export class FileLogger extends LoggerTemplate {
 
-    private path: string;
+    private path: string
 
     constructor(_path: string, _loglevel: string) {
-        super(_loglevel);
-        this.path = _path;
+
+        super(_loglevel)
+        this.path = _path
     }
 
     log(message: string): void {
-        console.log(`Message '${message}' written to ${this.path}`);
+        console.log(`Message '${message}' written to ${this.path}`)
     }
 }
 
 export class EmailLogger extends LoggerTemplate {
 
-    private email: string;
+    private email: string
 
     constructor(_email: string, _loglevel: string) {
-        super(_loglevel);
-        this.email = _email;
+
+        super(_loglevel)
+        this.email = _email
     }
 
     log(message: string): void {
-        console.log(`Message '${message}' sent to ${this.email}`);
+        console.log(`Message '${message}' sent to ${this.email}`)
     }
 }

@@ -1,4 +1,4 @@
 export class Editor {
     
-    text: string = "";
+    text: string = ""
 }
