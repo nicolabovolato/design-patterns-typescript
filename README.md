@@ -1,5 +1,7 @@
 # Desing Patterns in Typescript
 
+![Build](https://github.com/nicola-bovolato/design-patterns-typescript/workflows/Build/badge.svg)
+
 All the 23 GoF patterns implemented in Typescript.
 
 ## Building and running
